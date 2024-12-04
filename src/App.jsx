@@ -12,11 +12,11 @@ import ProductsOverview from './pages/products/ProductsOverview';
 import DigitalSolutions from './pages/products/DigitalSolutions';
 import EnterpriseSoftware from './pages/products/EnterpriseSoftware';
 import MobileApplications from './pages/products/MobileApplications';
-import Careers from './pages/careers/Careers';
-import CurrentOpenings from './pages/careers/CurrentOpenings';
-import LifeAtCompany from './pages/careers/LifeAtCompany';
-import Benefits from './pages/careers/Benefits';
-import InvestorRelations from './pages/InvestorRelations';
+// import Careers from './pages/careers/Careers';
+// import CurrentOpenings from './pages/careers/CurrentOpenings';
+// import LifeAtCompany from './pages/careers/LifeAtCompany';
+// import Benefits from './pages/careers/Benefits';
+// import InvestorRelations from './pages/InvestorRelations';
 import Contact from './pages/Contact';
 
 function App() {
