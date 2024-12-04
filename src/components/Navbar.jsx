@@ -41,7 +41,7 @@ export default function Navbar() {
       path: '/careers',
       submenu: [
         { name: 'Current Openings', path: '/careers/openings' },
-        { name: 'Life at IT Trailblazers', path: '/careers/life' },
+        { name: 'Life at Magista', path: '/careers/life' },
         { name: 'Benefits', path: '/careers/benefits' }
       ]
     },

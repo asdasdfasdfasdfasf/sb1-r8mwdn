@@ -9,7 +9,7 @@ const sections = [
     path: '/careers/openings'
   },
   {
-    title: 'Life at IT Trailblazers',
+    title: 'Life at Magista',
     description: 'Discover our vibrant work culture and values.',
     icon: Users,
     path: '/careers/life'

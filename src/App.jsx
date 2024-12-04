@@ -12,11 +12,11 @@ import ProductsOverview from './pages/products/ProductsOverview';
 import DigitalSolutions from './pages/products/DigitalSolutions';
 import EnterpriseSoftware from './pages/products/EnterpriseSoftware';
 import MobileApplications from './pages/products/MobileApplications';
-// import Careers from './pages/careers/Careers';
+import Careers from './pages/careers/Careers';
 // import CurrentOpenings from './pages/careers/CurrentOpenings';
 // import LifeAtCompany from './pages/careers/LifeAtCompany';
 // import Benefits from './pages/careers/Benefits';
-// import InvestorRelations from './pages/InvestorRelations';
+import InvestorRelations from './pages/InvestorRelations';
 import Contact from './pages/Contact';
 
 function App() {
@@ -43,9 +43,9 @@ function App() {
         
         {/* Careers Routes */}
         <Route path="/careers" element={<Careers />} />
-        <Route path="/careers/openings" element={<CurrentOpenings />} />
-        <Route path="/careers/life" element={<LifeAtCompany />} />
-        <Route path="/careers/benefits" element={<Benefits />} />
+        {/* <Route path="/careers/openings" element={<CurrentOpenings />} /> */}
+        {/* <Route path="/careers/life" element={<LifeAtCompany />} /> */}
+        {/* <Route path="/careers/benefits" element={<Benefits />} /> */}
         
         {/* Other Routes */}
         <Route path="/investor-relations" element={<InvestorRelations />} />

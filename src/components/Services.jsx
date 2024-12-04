@@ -1,52 +1,54 @@
-import { Cloud, Shield, BarChart3, Code, Building2, Users } from 'lucide-react';
+import React from "react";
 
-const services = [
+const servicesData = [
   {
-    title: 'Cloud Solutions',
-    description: 'The urgency for advanced cloud solutions.',
-    icon: Cloud,
+    title: "Application Development",
+    description: "Developing smarter applications - The new norm.",
+    icon: "🖥️", // Replace with your actual icon/image source
   },
   {
-    title: 'Cybersecurity',
-    description: 'The need for enhanced cybersecurity.',
-    icon: Shield,
+    title: "Enterprise Resource Management",
+    description: "Your One-stop-shop for Ecm services.",
+    icon: "👥", // Replace with your actual icon/image source
   },
   {
-    title: 'Data Analytics',
-    description: 'AI/ML – Setting Standards for the future.',
-    icon: BarChart3,
+    title: "Cloud Solutions",
+    description: "The urgency for advanced cloud solutions.",
+    icon: "☁️", // Replace with your actual icon/image source
   },
   {
-    title: 'Application Development',
-    description: 'Developing smarter applications- The new norm.',
-    icon: Code,
+    title: "Contract Staffing Services",
+    description: "Ensuring the knowledge alignment.",
+    icon: "🤝", // Replace with your actual icon/image source
   },
   {
-    title: 'Enterprise Resource Planning',
-    description: 'Your One-stop-shop for ERP services.',
-    icon: Building2,
+    title: "Cybersecurity Solutions",
+    description: "The need for enhanced cybersecurity.",
+    icon: "🔒", // Replace with your actual icon/image source
   },
   {
-    title: 'Contract Staffing & Workforce Solutions',
-    description: 'Ensuring the knowledge alignment.',
-    icon: Users,
+    title: "Data Analytics",
+    description: "AI/ML – Setting Standards for the future.",
+    icon: "📊", // Replace with your actual icon/image source
   },
 ];
 
-export default function Services() {
+const Services = () => {
   return (
-    <section id="services" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-blue-900">Our Services</h2>
-          <p className="mt-4 text-gray-600">Get to know our services.</p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
-            <div key={service.title} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <service.icon className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">{service.title}</h3>
+    <section className="bg-gray-100 py-12">
+      <div className="container mx-auto text-center px-4">
+        <h2 className="text-3xl font-bold mb-4">Our Services</h2>
+        <p className="text-lg text-gray-600 mb-8">Get to know our services.</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {servicesData.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-lg rounded-lg p-6 text-center border-t-4 border-blue-600"
+            >
+              <div className="text-4xl mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold text-blue-800 mb-2">
+                {service.title}
+              </h3>
               <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
@@ -54,4 +56,6 @@ export default function Services() {
       </div>
     </section>
   );
-}
+};
+
+export default Services;
